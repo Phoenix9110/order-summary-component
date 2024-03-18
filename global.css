@@ -1,0 +1,117 @@
+/* define variables for the primary colors */
+/* define variables for the neutral colors */
+/* define variables for typograpgh */
+/* red-hat-display-latin-wght-normal */
+@font-face {
+  font-family: "Red Hat Display Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/red-hat-display:vf@latest/latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display Variable";
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+.container .container__header {
+  background-image: url("./images/illustration-hero.svg");
+  background-size: contain;
+  height: 150px;
+  border-radius: 14px 14px 0px 0px;
+}
+.container .container__body {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.container .container__title {
+  font-weight: 900;
+  padding: 15px 0px;
+  text-align: center;
+}
+.container .container__description {
+  font-weight: 500;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background-color: hsl(0, 0%, 82%);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 7%;
+}
+.plan .plan__icon {
+  margin: auto 0px;
+  height: auto;
+  width: 50px;
+}
+.plan .plan__icon img {
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 50px;
+  margin-top: 5px;
+}
+.plan .plan__description {
+  line-height: 20px;
+  padding-right: 20px;
+}
+.plan .plan__description .plan__title {
+  font-size: 16px;
+}
+.plan .plan__description .plan__cost {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+}
+.plan .plan__linkchange {
+  color: hsl(223, 47%, 23%);
+  font-size: 16px;
+}
+
+.order__action {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 30px auto;
+  font-weight: 700;
+}
+.order__action .order__action_proceed {
+  background-color: hsl(245, 75%, 52%);
+  border: 1px solid hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 15px;
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 2px 8px 7px #cccccc;
+  margin-bottom: 20px;
+}
+.order__action a {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=global.css.map */

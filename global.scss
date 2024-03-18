@@ -1,0 +1,133 @@
+/* define variables for the primary colors */
+$Pale_blue: hsl(225, 100%, 94%);
+$Bright_blue: hsl(245, 75%, 52%);
+
+/* define variables for the neutral colors */
+$Very_pale_blue: hsl(225, 100%, 98%);
+$Desaturated_blue: hsl(224, 23%, 55%);
+$Dark_blue: hsl(223, 47%, 23%);
+
+/* define variables for typograpgh */
+$Font_size_paragraph: 16px;
+// $Family: [Red Hat Display](https://fonts.google.com/$ecimen/Red+Hat+Display)
+// $Weights: 500, 700, 900
+
+/* red-hat-display-latin-wght-normal */
+@font-face {
+  font-family: 'Red Hat Display Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/red-hat-display:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body {
+  background-color: $Pale_blue;
+  font-family: 'Red Hat Display Variable';
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  .container__header{
+    background-image: url('./images/illustration-hero.svg');
+    background-size: contain;
+    height: 150px;
+    border-radius:  14px 14px 0px 0px ;
+  }
+  .container__body{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  .container__title{
+    font-weight: 900;
+    padding: 15px 0px;
+    text-align: center;
+  }
+  .container__description{
+    font-weight: 500;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: $Font_size_paragraph;
+    color: $Desaturated_blue;
+  }
+}
+
+.plan{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background-color: hsl(0, 0%, 82%);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 7%;
+
+
+  .plan__icon{
+    margin: auto 0px;
+    height: auto;
+    width: 50px;
+    img {
+      background-color: $Pale_blue;
+      border-radius: 50px;
+      margin-top: 5px;
+
+    }
+  }
+  .plan__description{
+    line-height: 20px;
+    padding-right: 20px;
+    .plan__title{
+      font-size: $Font_size_paragraph;
+    }
+    .plan__cost{
+      color: $Desaturated_blue;
+      font-size: $Font_size_paragraph;
+    }
+  }
+  .plan__linkchange{
+    color: $Dark_blue;
+    font-size: $Font_size_paragraph;
+  }
+}
+
+.order__action{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 30px auto;
+  font-weight: 700;
+
+  .order__action_proceed{
+    background-color: $Bright_blue;
+    border: 1px solid $Bright_blue;
+    width: 100%;
+    padding: 15px;
+    color: $Very_pale_blue;
+    font-weight: 700;
+
+    border-radius: 5px;
+    box-shadow: 2px 8px 7px #cccccc;
+    margin-bottom: 20px;
+  }
+
+  a{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $Desaturated_blue;
+    font-size: $Font_size_paragraph;
+  }
+}
