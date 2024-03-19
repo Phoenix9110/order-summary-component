@@ -1,6 +1,6 @@
 /* define variables for the primary colors */
 $Pale_blue: hsl(225, 100%, 94%);
-$Bright_blue: hsl(245, 75%, 52%);
+$Bright_blue: #382AE1;
 
 /* define variables for the neutral colors */
 $Very_pale_blue: hsl(225, 100%, 98%);
@@ -37,7 +37,7 @@ body {
   margin: auto;
   margin-top: 15vh;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: #FFF;
   .container__header{
     background-image: url('./images/illustration-hero.svg');
     background-size: contain;
@@ -67,7 +67,7 @@ body {
   width: 80%;
   margin: auto;
   display: flex;
-  background-color: hsl(0, 0%, 82%);
+  background-color: #F8F9FE;
   border-radius: 5px;
   align-items: center;
   justify-content: space-evenly;
@@ -79,7 +79,7 @@ body {
     height: auto;
     width: 50px;
     img {
-      background-color: $Pale_blue;
+      background-color: #E0E5FB;
       border-radius: 50px;
       margin-top: 5px;
 
@@ -99,6 +99,7 @@ body {
   .plan__linkchange{
     color: $Dark_blue;
     font-size: $Font_size_paragraph;
+    font-weight: 700;
   }
 }
 
@@ -109,6 +110,7 @@ body {
   width: 80%;
   margin: 30px auto;
   font-weight: 700;
+  font-size: $Font_size_paragraph;
 
   .order__action_proceed{
     background-color: $Bright_blue;
@@ -117,8 +119,9 @@ body {
     padding: 15px;
     color: $Very_pale_blue;
     font-weight: 700;
+    font-size: 15px;
 
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 8px 7px #cccccc;
     margin-bottom: 20px;
   }

@@ -25,7 +25,7 @@ body {
   margin: auto;
   margin-top: 15vh;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: #FFF;
 }
 .container .container__header {
   background-image: url("./images/illustration-hero.svg");
@@ -55,7 +55,7 @@ body {
   width: 80%;
   margin: auto;
   display: flex;
-  background-color: hsl(0, 0%, 82%);
+  background-color: #F8F9FE;
   border-radius: 5px;
   align-items: center;
   justify-content: space-evenly;
@@ -67,7 +67,7 @@ body {
   width: 50px;
 }
 .plan .plan__icon img {
-  background-color: hsl(225, 100%, 94%);
+  background-color: #E0E5FB;
   border-radius: 50px;
   margin-top: 5px;
 }
@@ -85,6 +85,7 @@ body {
 .plan .plan__linkchange {
   color: hsl(223, 47%, 23%);
   font-size: 16px;
+  font-weight: 700;
 }
 
 .order__action {
@@ -94,15 +95,17 @@ body {
   width: 80%;
   margin: 30px auto;
   font-weight: 700;
+  font-size: 16px;
 }
 .order__action .order__action_proceed {
-  background-color: hsl(245, 75%, 52%);
-  border: 1px solid hsl(245, 75%, 52%);
+  background-color: #382AE1;
+  border: 1px solid #382AE1;
   width: 100%;
   padding: 15px;
   color: hsl(225, 100%, 98%);
   font-weight: 700;
-  border-radius: 5px;
+  font-size: 15px;
+  border-radius: 10px;
   box-shadow: 2px 8px 7px #cccccc;
   margin-bottom: 20px;
 }
