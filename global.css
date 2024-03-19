@@ -17,15 +17,28 @@
 
 body {
   background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-mobile.svg");
   font-family: "Red Hat Display Variable";
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
 }
 
 .container {
-  width: 90%;
+  width: 330px;
   margin: auto;
   margin-top: 15vh;
   border-radius: 15px;
   background-color: #FFF;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    width: 360px;
+  }
 }
 .container .container__header {
   background-image: url("./images/illustration-hero.svg");
@@ -87,6 +100,9 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
+.plan .plan__linkchange:hover {
+  cursor: pointer;
+}
 
 .order__action {
   display: flex;
@@ -109,12 +125,18 @@ body {
   box-shadow: 2px 8px 7px #cccccc;
   margin-bottom: 20px;
 }
+.order__action .order__action_proceed:hover {
+  cursor: pointer;
+}
 .order__action a {
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
   color: hsl(224, 23%, 55%);
   font-size: 16px;
+}
+.order__action a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=global.css.map */

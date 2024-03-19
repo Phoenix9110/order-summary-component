@@ -9,8 +9,9 @@ $Dark_blue: hsl(223, 47%, 23%);
 
 /* define variables for typograpgh */
 $Font_size_paragraph: 16px;
-// $Family: [Red Hat Display](https://fonts.google.com/$ecimen/Red+Hat+Display)
-// $Weights: 500, 700, 900
+
+
+$desktop: 900px;
 
 /* red-hat-display-latin-wght-normal */
 @font-face {
@@ -29,15 +30,26 @@ $Font_size_paragraph: 16px;
 
 body {
   background-color: $Pale_blue;
+  background-image: url('./images/pattern-background-mobile.svg');
   font-family: 'Red Hat Display Variable';
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $desktop) {
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
 }
 
 .container{
-  width: 90%;
+  width: 330px;
   margin: auto;
   margin-top: 15vh;
   border-radius: 15px;
   background-color: #FFF;
+
+  @media screen and (min-width: $desktop) {
+    width: 360px;
+  }
+
   .container__header{
     background-image: url('./images/illustration-hero.svg');
     background-size: contain;
@@ -101,6 +113,9 @@ body {
     font-size: $Font_size_paragraph;
     font-weight: 700;
   }
+  .plan__linkchange:hover{
+    cursor: pointer
+  }
 }
 
 .order__action{
@@ -125,6 +140,9 @@ body {
     box-shadow: 2px 8px 7px #cccccc;
     margin-bottom: 20px;
   }
+  .order__action_proceed:hover{
+    cursor: pointer
+  }
 
   a{
     width: 100%;
@@ -132,5 +150,22 @@ body {
     text-align: center;
     color: $Desaturated_blue;
     font-size: $Font_size_paragraph;
+  }
+
+  a:hover{
+    cursor: pointer
+  }
+}
+
+$small: 300px;
+$medium: 900px;
+
+.smth {
+  //some CSS
+  @media screen and (max-width: $small) {
+    //do Smth
+  }
+  @media screen and (min-width: $medium) {
+    //do Smth
   }
 }
